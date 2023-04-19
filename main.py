@@ -1,6 +1,6 @@
 import pandas as pd
-import random
 from tkinter import *
+import random
 
 BACKGROUND_COLOR = "#B1DDC6"
 current_card = {}
@@ -42,23 +42,6 @@ window = Tk()
 window.title("Flashy")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 flip_timer = window.after(ms=3000, func=flip_card)
-
-# print("Path at terminal when executing this file")
-# print(os.getcwd() + "\n")
-#
-# print("This file path, relative to os.getcwd()")
-# print(__file__ + "\n")
-#
-# print("This file full path (following symlinks)")
-# full_path = os.path.realpath(__file__)
-# print(full_path + "\n")
-#
-# print("This file directory and name")
-# path, filename = os.path.split(full_path)
-# print(path + ' --> ' + filename + "\n")
-#
-# print("This file directory only")
-# print(os.path.dirname(full_path))
 
 card_front_img = PhotoImage(file="./images/card_front.png")
 card_back_img = PhotoImage(file="./images/card_back.png")
